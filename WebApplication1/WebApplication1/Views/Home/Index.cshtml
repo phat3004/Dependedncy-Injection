@@ -1,0 +1,17 @@
+﻿@model List<DISample.Service.Dtos.ProductViewModel>
+@{
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="with=device-with" />
+    <title></title>
+</head>
+<body>
+    <h2>Index</h2>
+    @foreach (var product in Model)
+    {
+        <p>@product.ID @product.Name</p>
+    }
+</body>
+</html>
